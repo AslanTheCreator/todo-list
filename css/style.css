@@ -1,0 +1,130 @@
+* {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+:root {
+  --gray: #24475b;
+  --dark: #374151;
+  --black: #000;
+  --white: #fff;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --light: #eee;
+  --pink: #ec4899;
+  --purple: #8b5cf6;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--gray);
+  color: var(--white);
+}
+
+[class*='__container'] {
+  max-width: 887px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.header {
+  padding: 2rem 1rem;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+h2 {
+  padding-bottom: 2rem;
+}
+
+.add {
+  margin-bottom: 5rem;
+}
+
+.form {
+  display: flex;
+}
+
+.form__text {
+  font-size: 1.25rem;
+  flex: 1 1 0%;
+  padding: 1rem;
+  background-color: var(--darker);
+  border-radius: 1rem;
+  margin-right: 1rem;
+  font-weight: bold;
+  color: var(--light);
+}
+
+input[type='submit'] {
+  font-size: 1.25rem;
+  color: var(--pink);
+  font-weight: bold;
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  opacity: 0.8;
+}
+
+input[type='submit']:active {
+  opacity: 0.5;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+}
+
+.task {
+  font-size: 1.25rem;
+  display: flex;
+  padding: 1rem;
+  background-color: var(--darkest);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.task__content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.task__text {
+  color: var(--light);
+}
+
+.button__task__edit {
+  cursor: pointer;
+  text-transform: uppercase;
+  color: var(--pink);
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button__task__remove {
+  cursor: pointer;
+  text-transform: uppercase;
+  color: crimson;
+}
